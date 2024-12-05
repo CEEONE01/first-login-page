@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+p {
+    width:120%;
+}
+.container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* overflow: hidden; */
+    border-radius:0px;
+}
+.form-container {
+    padding: 40px;
+    width: 300px;
+}
+.form-container h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.form-container label {
+    display: block;
+    margin-bottom:0.5remx;
+    font-size: 14px;
+    color: #333;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.checkbox-container input{
+    position: absolute;
+    opacity:0;
+    cursor: pointer;
+}
+.pass{
+    display:flex;
+    justify-content: end;
+    margin-bottom: -15PX;
+    
+}
+.checkbox-container{
+    display:block;
+    position: relative;
+    padding-left:2rem;
+    cursor:pointer;
+    margin:0 0 1.2rem;
+}
+.checkmark{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:white;
+    border:1px solid #c4c4c4;
+    border-radius: 5px;
+    top: -4px;
+    left: 0;
+}
+.checkmark:after{
+    content:"";
+    position:absolute;
+    display:none;
+}
+.checkbox-container input:checked.checkmark::after{
+    border: solid white;
+    border-width:0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top:4px;
+    transform:rotata(45deg)
+}
+.form-container button {
+    width:100%;
+    padding:10px;
+    background-color:green;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size: 16px;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+.form-container button:hover {
+    background-color: #36c23d;
+}
+.form-container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+.form-container .options a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('newflowe.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    border-radius: 25px;
+   
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="stylee.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Welcome Back</h2>
+            <P>Enter your credentials to access your account</P>
+            <form>
+                <label for="name">Email address</label>
+                <input type="text" id="name" name="name" placeholder="Input your email" minlength="3" maxlength="7" required />
+                <a class="pass" href="#">forget password</a>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Input your password"maxlength="10"required/>
+            <div class="input-container cta">
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Remember for 30 days
+                </label>  
+                </div>
+                <button type="submit">LOGIN</button>
+                <br>
+                <br>
+                <div class="options">
+                    <span>Already have an account? <a href="">Sign in</a></span>
+                </div>
+            </form>
+            
+        </div>
+        <div class="image-container"></div>
+    </div>
+  </body>
+</html>
